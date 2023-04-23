@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E8EFFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.inventorymanagement.MenuController">
+   <children>
+      <AnchorPane prefHeight="76.0" prefWidth="600.0" style="-fx-background-color: #3B5082;">
+         <children>
+            <ImageView fx:id="shieldImageView" fitHeight="64.0" fitWidth="51.0" layoutX="127.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../images/Shield.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="183.0" layoutY="22.0" prefHeight="32.0" prefWidth="301.0" text="Inventory Management System" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="employeesButton" layoutX="250.0" layoutY="130.0" mnemonicParsing="false" onAction="#employeesButtonOnAction" prefHeight="49.0" prefWidth="100.0" style="-fx-background-color: #3B5082;" text="Employees" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="productsButton" layoutX="390.0" layoutY="130.0" mnemonicParsing="false" onAction="#productsButtonOnAction" prefHeight="49.0" prefWidth="100.0" style="-fx-background-color: #3B5082;" text="Prooducts" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="branchesButton" layoutX="100.0" layoutY="130.0" mnemonicParsing="false" onAction="#branchesButtonOnAction" prefHeight="49.0" prefWidth="100.0" style="-fx-background-color: #3B5082;" text="Branches" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="purchaseButton" layoutX="100.0" layoutY="222.0" mnemonicParsing="false" onAction="#purchaseButtonOnAction" prefHeight="49.0" prefWidth="100.0" style="-fx-background-color: #3B5082;" text="Purchases" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="supplierButton" layoutX="250.0" layoutY="222.0" mnemonicParsing="false" onAction="#suppliersButtonOnAction" prefHeight="49.0" prefWidth="100.0" style="-fx-background-color: #3B5082;" text="Suppliers" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitButton" layoutX="250.0" layoutY="308.0" mnemonicParsing="false" onAction="#exitButtonOnAction" prefHeight="49.0" prefWidth="100.0" style="-fx-background-color: #3B5082;" text="Exit" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="customersButton" layoutX="390.0" layoutY="222.0" mnemonicParsing="false" onAction="#customersButtonOnAction" prefHeight="49.0" prefWidth="100.0" style="-fx-background-color: #3B5082;" text="Customers" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

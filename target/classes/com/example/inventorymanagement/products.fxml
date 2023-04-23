@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="776.0" prefWidth="820.0" style="-fx-background-color: #E8EFFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.inventorymanagement.ProductsController">
+   <children>
+      <AnchorPane prefHeight="76.0" prefWidth="820.0" style="-fx-background-color: #3B5082;">
+         <children>
+            <ImageView fx:id="shieldImageView" fitHeight="64.0" fitWidth="51.0" layoutX="327.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../images/Shield.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="373.0" layoutY="22.0" prefHeight="32.0" prefWidth="73.0" text="Products" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="updateButton" layoutX="124.0" layoutY="285.0" mnemonicParsing="false" onAction="#updateButtonOnAction" prefHeight="64.0" prefWidth="135.0" style="-fx-background-color: #3B5082;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="updateProductID" layoutX="11.0" layoutY="146.0" prefHeight="25.0" prefWidth="109.0" />
+      <TextField fx:id="updateProductName" layoutX="139.0" layoutY="146.0" prefHeight="25.0" prefWidth="109.0" />
+      <TextField fx:id="updateSupplierID" layoutX="265.0" layoutY="146.0" prefHeight="25.0" prefWidth="109.0" />
+      <Label layoutX="40.0" layoutY="178.0" text="Product_id" />
+      <Label layoutX="158.0" layoutY="178.0" text="Product_name" />
+      <Label layoutX="294.0" layoutY="178.0" text="Supplier_id" />
+      <Button fx:id="removeButton" layoutX="519.0" layoutY="608.0" mnemonicParsing="false" onAction="#removeButtonOnAction" prefHeight="64.0" prefWidth="135.0" style="-fx-background-color: #3B5082;" text="Remove" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="removeProductID" layoutX="532.0" layoutY="551.0" prefHeight="25.0" prefWidth="109.0" />
+      <Label layoutX="561.0" layoutY="584.0" text="Product_id" />
+      <Button fx:id="addButton" layoutX="124.0" layoutY="573.0" mnemonicParsing="false" onAction="#addButtonOnAction" prefHeight="64.0" prefWidth="135.0" style="-fx-background-color: #3B5082;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="12.0" layoutY="101.0" prefHeight="32.0" prefWidth="135.0" text="Update a record" textFill="#3b5082">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="12.0" layoutY="380.0" prefHeight="32.0" prefWidth="135.0" text="Add a new record" textFill="#2e843c">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="532.0" layoutY="509.0" prefHeight="32.0" prefWidth="135.0" text="Remove a record" textFill="RED">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="recordUpdatedMessageLabel" layoutX="146.0" layoutY="107.0" prefHeight="19.0" prefWidth="198.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="recordAddedMessageLabel" layoutX="141.0" layoutY="386.0" prefHeight="19.0" prefWidth="188.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="recordRemovedMessageLabel" layoutX="654.0" layoutY="516.0" prefHeight="19.0" prefWidth="146.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="exitButton" layoutX="203.0" layoutY="694.0" mnemonicParsing="false" onAction="#exitButtonOnAction" prefHeight="64.0" prefWidth="413.0" style="-fx-background-color: #3B5082;" text="Exit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="updateAmountInStock" layoutX="67.0" layoutY="214.0" prefHeight="25.0" prefWidth="109.0" />
+      <TextField fx:id="updateUnitPrice" layoutX="207.0" layoutY="214.0" prefHeight="25.0" prefWidth="109.0" />
+      <Label layoutX="77.0" layoutY="246.0" text="amount_in_stock" />
+      <Label layoutX="233.0" layoutY="246.0" text="unit_price" />
+      <TextField fx:id="addProductID" layoutX="14.0" layoutY="433.0" prefHeight="25.0" prefWidth="109.0" />
+      <TextField fx:id="addProductName" layoutX="142.0" layoutY="433.0" prefHeight="25.0" prefWidth="109.0" />
+      <TextField fx:id="addSupplierID" layoutX="268.0" layoutY="433.0" prefHeight="25.0" prefWidth="109.0" />
+      <Label layoutX="43.0" layoutY="465.0" text="Product_id" />
+      <Label layoutX="161.0" layoutY="465.0" text="Product_name" />
+      <Label layoutX="297.0" layoutY="465.0" text="Supplier_id" />
+      <TextField fx:id="addAmountInStock" layoutX="70.0" layoutY="501.0" prefHeight="25.0" prefWidth="109.0" />
+      <TextField fx:id="addUnitPrice" layoutX="210.0" layoutY="501.0" prefHeight="25.0" prefWidth="109.0" />
+      <Label layoutX="80.0" layoutY="533.0" text="amount_in_stock" />
+      <Label layoutX="239.0" layoutY="533.0" text="unit_price" />
+      <TableView fx:id="productTableView" layoutX="383.0" layoutY="141.0" prefHeight="366.0" prefWidth="429.0">
+        <columns>
+          <TableColumn fx:id="productIDTableColumn" prefWidth="67.33331298828125" text="Product_id" />
+          <TableColumn fx:id="productNameTableColumn" prefWidth="95.33334350585938" text="product_name" />
+            <TableColumn fx:id="supplierIDTableColumn" prefWidth="73.33331298828125" text="supplier_id" />
+            <TableColumn fx:id="amountInStockTableColumn" prefWidth="106.0" text="amount_in_stock" />
+            <TableColumn fx:id="unitPriceTableColumn" prefWidth="94.6666259765625" text="unit_price" />
+            <TableColumn fx:id="productIDColumn1" prefWidth="67.33331298828125" text="Product_id" />
+        </columns>
+      </TableView>
+      <Label layoutX="383.0" layoutY="101.0" prefHeight="32.0" prefWidth="135.0" text="Search Product">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="keywordTextField" layoutX="486.0" layoutY="104.0" prefHeight="25.0" prefWidth="313.0" promptText="Keyword" />
+   </children>
+</AnchorPane>
